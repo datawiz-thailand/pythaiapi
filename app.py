@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = os.urandom(24)
 CORS(app)
 
 
-@app.route('/pythaiapi/word_tokenize', methods=['POST'])
+@app.route('/api/word_tokenize', methods=['POST'])
 def tokenize():
     return jsonify(pythaiapi.tokenize(request))
 
@@ -25,16 +25,16 @@ if __name__ == "__main__":
 
 
 
-# @app.route('/pythaiapi/normalize', methods=['POST'])
+# @app.route('/api/normalize', methods=['POST'])
 # def normalize():
 #     return jsonify(pythaiapi.normalize(request))
 
 
-# @app.route('/pythaiapi/spell', methods=['POST'])
+# @app.route('/api/spell', methods=['POST'])
 # def spell():
 #     return jsonify(pythaiapi.spell(request))
 
 
-# @app.route('/pythaiapi/pos_tag', methods=['POST'])
+# @app.route('/api/pos_tag', methods=['POST'])
 # def pos_tag():
 #     return jsonify(pythaiapi.pos_tag(request))
