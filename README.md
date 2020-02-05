@@ -15,7 +15,7 @@ Body: {"text": "ทดสอบการตัดคำ"}
 
 ```bash
 curl -X POST \
-https://pythaiapi.herokuapp.com/api/word_tokenize?engine=newmm&keep_whitespace=true \
+'https://pythaiapi.herokuapp.com/api/word_tokenize?engine=attacut&keep_whitespace=true' \
 -H 'Content-Type: application/json' \
 -d '{"text":"ทดสอบภาษาไทย"}' | json_pp
 ```
