@@ -21,20 +21,3 @@ def not_found(e):
 
 if __name__ == "__main__":
     app.run()
-
-
-
-
-# @app.route('/api/normalize', methods=['POST'])
-# def normalize():
-#     return jsonify(pythaiapi.normalize(request))
-
-
-# @app.route('/api/spell', methods=['POST'])
-# def spell():
-#     return jsonify(pythaiapi.spell(request))
-
-
-# @app.route('/api/pos_tag', methods=['POST'])
-# def pos_tag():
-#     return jsonify(pythaiapi.pos_tag(request))
